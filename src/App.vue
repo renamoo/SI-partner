@@ -1,13 +1,30 @@
 <template>
-  <div id="app">
-    <header>
-      <span>Vue.js PWA</span>
-    </header>
-    <main>
-      <img src="./assets/logo.png" alt="Vue.js PWA">
-      <router-view></router-view>
-    </main>
-  </div>
+  <v-app id="app" dark>
+    <v-container fluid grid-list-sm>
+      <v-layout row>
+        <v-layout column>
+          <v-flex d-flex xs6 sm6 md6>
+          <v-card>
+            <router-view class="view one" name="StopWatch"></router-view>
+          </v-card>
+          </v-flex>
+
+          <v-flex d-flex xs6 sm6 md6>
+          <v-card>
+             <router-view class="view two" name="Note"></router-view>
+          </v-card>
+          </v-flex>
+        </v-layout>
+
+          <v-flex d-flex xs6 sm6 md6>
+          <v-card>
+             <router-view class="view three" name="Vocab"></router-view>
+          </v-card>
+          </v-flex>
+
+      </v-layout>
+    </v-container>
+  </v-app>
 </template>
 
 <script>
