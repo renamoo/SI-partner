@@ -11,14 +11,14 @@
 
           <v-flex d-flex xs6 sm6 md6>
           <v-card>
-             <router-view class="view two" name="Note"></router-view>
+             <router-view class="view two" name="Vocab"></router-view>
           </v-card>
           </v-flex>
         </v-layout>
 
           <v-flex d-flex xs6 sm6 md6>
           <v-card>
-             <router-view class="view three" name="Vocab"></router-view>
+             <router-view class="view three" name="Note"></router-view>
           </v-card>
           </v-flex>
 
