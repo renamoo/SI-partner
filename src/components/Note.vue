@@ -1,11 +1,15 @@
 <template>
-  <v-container>
-    <v-flex>
-     <vueSignature ref="signature" :sigOption="option"></vueSignature> 
-        <v-btn small @click="save">Save</v-btn>
-        <v-btn small @click="clear">Clear</v-btn>
-        <v-btn small @click="undo">Undo</v-btn>
-    </v-flex>
+  <v-container fill-height>
+    <v-layout fill-height row>
+      <v-flex >
+        <vueSignature ref="signature" :sigOption="option"></vueSignature> 
+      </v-flex>
+      <v-flex column>
+        <v-flex><v-btn small @click="save">Save</v-btn></v-flex>
+        <v-flex><v-btn small @click="clear">Clear</v-btn></v-flex>
+        <v-flex><v-btn small @click="undo">Undo</v-btn></v-flex>
+      </v-flex>
+    </v-layout>
   </v-container>
 </template>
 
@@ -17,7 +21,7 @@ export default {
       option:{
                 penColor:"rgb(0, 0, 0)",
                 backgroundColor:"rgb(255,255,255)"
-            }
+      }
     }
   },
    methods:{
