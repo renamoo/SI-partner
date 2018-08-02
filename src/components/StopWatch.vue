@@ -2,7 +2,7 @@
   <v-container>
   <v-layout column>
     <v-flex>
-      <p class="text-md-center">
+      <p>
         {{ minutes | zeroPad }} :
         {{ seconds | zeroPad }} :
         {{ milliSeconds | zeroPad(3) }}
@@ -104,4 +104,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+p{
+ font-size: 30px;
+ text-align: center;
+}
 </style>
